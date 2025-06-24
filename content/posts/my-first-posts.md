@@ -4,3 +4,9 @@ title = 'My First Posts'
 +++
 
 HelloWorld！
+
+```cpp
+int main() {
+    return 0;
+}
+```
