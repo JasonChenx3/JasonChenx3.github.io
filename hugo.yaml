@@ -51,7 +51,7 @@ params:
     Title: "Hey Guys 👋"
     # 首页的 profile 内容
     Content: >
-      Welcome to my Blog!
+      Welcome to my Blog! 这里是用来存放我的**学习笔记**和**日常思考**的地方。
 
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   description: "Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod"
