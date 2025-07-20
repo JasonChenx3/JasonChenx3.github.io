@@ -15,6 +15,9 @@ pygmentsUseClasses: true
 defaultContentLanguage: zh # 顶部首先展示的语言界面
 defaultContentLanguageInSubdir: false # 是否要在地址栏加上默认的语言代码
 
+pagination:
+  pagerSize: 5 # 主页每页显示文章数量
+
 languages:
   zh:
     languageName: "中文" # 展示的语言名
@@ -51,7 +54,7 @@ params:
     Title: "Hey Guys 👋"
     # 首页的 profile 内容
     Content: >
-      Welcome to my Blog! 这里是我自由表达和记录的地方。
+      <h3>Welcome to my Blog!</h3> </br> <h3>这里是我自由表达和记录的地方。</h3>
 
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   description: "Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod"
@@ -91,7 +94,7 @@ params:
     keys: ["title", "permalink", "summary", "content"]
     includeMatches: true
 
-  # 评论的设置
+  # 评论的配置
   giscus:
     repo: "JasonChenx3/JasonChenx3.github.io"
     repoId: "R_kgDOPAOPrw"
