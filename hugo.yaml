@@ -28,12 +28,15 @@ languages:
     # https://gohugo.io/content-management/menus/#define-in-site-configuration
     menus:
       main:
-        - name: 首页
+        - name: 主页
           pageRef: /
           weight: 4 # 控制在页面上展示的前后顺序
-        - name: 归档
-          pageRef: archives/
+        - name: 文章
+          pageRef: posts/
           weight: 5
+        - name: 时间轴
+          pageRef: archives/
+          weight: 6
         - name: 分类
           pageRef: categories/
           weight: 10
@@ -48,13 +51,33 @@ languages:
         #   weight: 21
 
 params:
-  # 首页的文章上方的一些信息
-  homeInfoParams:
-    # 首页的 profile 内容
-    Title: "Hey Guys 👋"
-    # 首页的 profile 内容
-    Content: >
-      <h3>Welcome to my Blog!</h3>
+  # # 首页的文章上方的一些信息
+  # homeInfoParams:
+  #   # 首页的 profile 内容
+  #   Title: "Hey Guys 👋"
+  #   # 首页的 profile 内容
+  #   Content: >
+  #     <h3>Welcome to my Blog!</h3>
+  profileMode:
+    enabled: true
+    title: Jason's Blog
+    subtitle: "👏🏼Welcome to my Blog!"
+    imageUrl: "LOGO.jpg"
+    imageTitle: Avatar
+    imageWidth: 150
+    imageHeight: 150
+    buttons:
+      - name: 进入博客
+        url: posts
+    socialIcons:
+      - name: github
+        url: "https://github.com/yunyit"
+      - name: instagram
+        url: "https://www.instagram.com/yunyi_cam/"
+      - name: goodreads
+        url: "https://www.goodreads.com/user/show/161105203-yunyi-tang"
+      - name: email
+        url: "mailto:yunyi.tang.820@gmail.com"
 
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   description: "Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod"
